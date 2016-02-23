@@ -1,6 +1,6 @@
 Package.describe({
   name: 'obringer20:meteor-discogs',
-  version: '1.1.0',
+  version: '1.1.1',
   summary: 'Retrieves music data from Discogs.',
   documentation: 'README.md',
   git: 'https://github.com/ben-obringer/meteor-discogs.git'
@@ -11,11 +11,11 @@ Npm.depends({ disconnect: '0.6.8' });
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
 
-  api.use('ecmascript', 'server');
+  api.use('ecmascript');
 
-  api.addFiles('meteor-discogs.js', 'server');
+  api.addFiles('meteor-discogs.js');
 
-  api.export('Discogs', 'server');
+  api.export('Discogs');
 });
 
 Package.onTest(function(api) {
@@ -24,7 +24,7 @@ Package.onTest(function(api) {
     'ecmascript',
     'sanjo:jasmine@0.20.3'
   ];
-  api.use(packages, 'server');
+  api.use(packages);
 
-  api.addFiles('meteor-discogs-tests.js', 'server');
+  api.addFiles('meteor-discogs-tests.js');
 });
