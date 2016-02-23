@@ -24,4 +24,9 @@ describe('Discogs', () => {
     const label = d.label(1);
     expect(label.name).toBe('Planet E');
   });
+
+  it('should be able to search for releases', () => {
+    const search = d.search('illmatic - nas');
+    expect(search.results.length).toBeGreaterThan(0);
+  });
 });

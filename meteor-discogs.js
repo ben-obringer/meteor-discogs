@@ -23,6 +23,10 @@ Discogs = class Discogs {
     return this._wrapAsyncDisconnectFunction('release')(releaseId);
   }
 
+  search(query) {
+    return this._wrapAsyncDisconnectFunction('search')(query);
+  }
+
 
 
   _wrapAsyncDisconnectFunction(disconnectFunction) {

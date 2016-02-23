@@ -39,6 +39,9 @@ const masterRelease = discogs.masterRelease(123);
 
 // Retrieving a release
 const release = discogs.release(123);
+
+// Searching
+const search = discogs.search('illmatic - nas');
 ```
 
 ### Testing

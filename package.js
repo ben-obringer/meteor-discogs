@@ -1,6 +1,6 @@
 Package.describe({
   name: 'obringer20:meteor-discogs',
-  version: '1.0.0',
+  version: '1.1.0',
   summary: 'Retrieves music data from Discogs.',
   documentation: 'README.md',
   git: 'https://github.com/ben-obringer/meteor-discogs.git'
